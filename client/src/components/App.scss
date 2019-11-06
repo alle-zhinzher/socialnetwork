@@ -1,6 +1,45 @@
-h1 {
-    color: rgb(74, 74, 126);
+@import './styles/reset.scss';
+@import './styles/variables.scss';
+
+body {
+    background-color: $main-bg-color;
 }
-img {
-    width: 400px;
+
+.wrapper--main {
+    width: 1440px;
+    margin: 40px auto;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "profile wall aside";
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    background-color: aqua;
+}
+
+aside {
+    grid-area: aside;
+    height: 400px;
+    background-color: brown;
+}
+
+.profile {
+    height: 400px;
+    grid-area: profile;
+    background-color: rgb(255, 0, 119);
+}
+
+.wall {
+    height: 400px;
+    grid-area: wall;
+    background-color: yellow;
 }
