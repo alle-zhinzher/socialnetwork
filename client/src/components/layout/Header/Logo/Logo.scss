@@ -1,0 +1,19 @@
+@import '../../../../styles/variables.scss';
+
+.header__logo {
+    height: 110px;
+    padding: 0px 70px;
+    background-image: linear-gradient($nav-bg, rgb(46, 48, 59));
+
+    &__img {
+        width: 70px;
+        height: 80px;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .heading {
+        margin-left: 15px;
+        padding-top: 15px;
+    }
+}

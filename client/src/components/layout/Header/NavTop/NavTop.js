@@ -5,7 +5,7 @@ import './NavTop.scss';
 
 function NavTop() {
     return (
-        <nav className="nav">
+        <nav className="header__nav nav">
             <NavTopLinks />
             <NavTopAccount />
         </nav>

@@ -1,9 +1,11 @@
+@import '../../../../../styles/variables.scss';
+
 .user-section {
     display: flex;
     padding: 10px 20px;
 
     &:hover {
-        background-color: rgb(27, 73, 73);
+        background-color: $header-icons-bg;
     }
 
     &__img {

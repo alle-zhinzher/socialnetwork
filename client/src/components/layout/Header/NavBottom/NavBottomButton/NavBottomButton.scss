@@ -1,0 +1,14 @@
+@import '../../../../../styles/variables.scss';
+
+.nav-buttom__item {
+
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;
+    width: 130px;
+    height: 60px;
+
+    &:hover {
+        background-color: $header-icons-bg
+    }
+};

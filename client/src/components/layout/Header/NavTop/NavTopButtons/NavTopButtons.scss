@@ -1,3 +1,5 @@
+@import '../../../../../styles/variables.scss';
+
 .wrapper--nav-button {
     width: 70px;
     height: 60px;
@@ -5,7 +7,7 @@
     padding-left: 22px;
 
     &:hover {
-        background-color: rgb(27, 73, 73);
+        background-color: $header-icons-bg;
     }
 }
 
