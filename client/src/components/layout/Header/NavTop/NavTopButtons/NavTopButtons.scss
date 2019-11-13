@@ -1,0 +1,17 @@
+.wrapper--nav-button {
+    width: 70px;
+    height: 60px;
+    padding: 15px;
+    padding-left: 22px;
+
+    &:hover {
+        background-color: rgb(27, 73, 73);
+    }
+}
+
+.nav__left__button__img {
+    filter: invert(0.7) sepia(0.2);
+    width: 30px;
+    height: 30px;
+}
+

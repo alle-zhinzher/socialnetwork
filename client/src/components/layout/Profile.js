@@ -2,7 +2,7 @@ import React from 'react'
 
 function Profile() {
     return (
-        <section class="profile">
+        <section className="profile">
             PROFILE
         </section>
     )

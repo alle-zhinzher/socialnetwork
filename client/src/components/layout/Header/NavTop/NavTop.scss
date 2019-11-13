@@ -1,0 +1,9 @@
+@import '../../../../styles/variables.scss';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 70px;
+    background-color: $header-top-bg;
+}

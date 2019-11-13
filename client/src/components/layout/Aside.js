@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Aside() {
     return (
@@ -6,6 +6,6 @@ function Aside() {
             ASIDE
         </aside>
     )
-}
+};
 
 export default Aside;

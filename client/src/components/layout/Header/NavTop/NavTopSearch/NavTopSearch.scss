@@ -1,0 +1,33 @@
+.form__nav {
+    margin-top: 10px;
+    margin-left: 20px;
+
+    &__input {
+        height: 40px; 
+        width: 300px;
+        border: none;
+        padding: 5px;
+        padding-left: 15px;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    };
+    
+    &__button {
+        height: 40px;
+        width: 50px;
+        display: block;
+        float: right;
+        border: none;
+
+        &:hover {
+            background-color: rgb(112, 118, 124);
+        }
+
+        &__img {
+            height: 20px;
+            width: 20px;
+        }
+
+    };
+
+}

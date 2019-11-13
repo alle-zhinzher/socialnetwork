@@ -23,22 +23,24 @@ module.exports = {
     },
     optimization: {
         splitChunks: {
-          cacheGroups: {
-            vendor: {
-              name: 'vendors',
-              test: /node_modules/,
-              chunks: 'all',
-              enforce: true
+            cacheGroups: {
+                vendor: {
+                    name: 'vendors',
+                    test: /node_modules/,
+                    chunks: 'all',
+                    enforce: true
+                }
             }
-          }
         }
-      },
+    },
     module: {
         rules: [
             {
                 test: /\.js$/,
-                loader: "babel-loader",
                 exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
             }, {
                 test: /\.scss$/,
                 use: [
@@ -70,10 +72,10 @@ module.exports = {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file-loader',
                 options: {
-                  name: '[name].[ext]'
+                    name: '[name].[ext]'
                 }
-              },
-           
+            },
+
         ]
     },
 
