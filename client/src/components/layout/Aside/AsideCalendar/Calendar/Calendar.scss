@@ -1,0 +1,25 @@
+.calendar__img {
+    width: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: rgb(195, 195, 195);
+    text-align: center;
+
+    &__header {
+        padding: 5px 0px;
+        text-transform: uppercase;
+        background-color: #33495e;
+        font-size: 14px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    };
+
+    &__date {
+        padding: 10px 0px;
+        background-color: #37739e;
+        font-size: 28px;
+        font-weight: bold;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    };
+}

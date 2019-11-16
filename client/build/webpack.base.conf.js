@@ -14,12 +14,11 @@ module.exports = {
     externals: {
         paths: PATHS,
     },
-    entry: PATHS.src,
+    entry: `${PATHS.src}/index.tsx`,
     output: {
         path: path.dist,
         filename: `${PATHS.assets}js/[name].js`,
         publicPath: '/'
-
     },
     optimization: {
         splitChunks: {
@@ -36,11 +35,19 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.ts(x?)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
+                use: [
+                    {
+                        loader: "ts-loader"
+                    }
+                ]
+            },
+            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+            {
+                enforce: "pre",
+                test: /\.js$/,
+                loader: "source-map-loader"
             }, {
                 test: /\.scss$/,
                 use: [
@@ -78,7 +85,10 @@ module.exports = {
 
         ]
     },
-
+    resolve: {
+        modules: ["src", "node_modules"],
+        extensions: [".ts", ".tsx", ".js", ".scss"],
+    },
     plugins: [
         new HtmlWebpackPlugin({
             hash: false,

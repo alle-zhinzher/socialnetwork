@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import './Logo.scss';
 
 function Logo() {
@@ -10,7 +10,7 @@ function Logo() {
                 <h3 className="heading--small heading--white heading--right">Find New Friends</h3>
             </section>
         </section>
-    )
+    );
 };
 
-export default Logo;
+export { Logo };

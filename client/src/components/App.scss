@@ -5,38 +5,7 @@ body {
     background-color: $main-bg-color;
 }
 
-.wrapper--main {
+#root {
     width: 1440px;
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "profile wall aside";
-    grid-template-rows: 230px 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 30px;
     margin: 40px auto;
-    
-}
-
-header {
-    grid-area: header;
-    width: 100%;
-}
-
-aside {
-    grid-area: aside;
-    height: 400px;
-    background-color: brown;
-}
-
-.profile {
-    height: 400px;
-    grid-area: profile;
-    background-color: rgb(255, 0, 119);
-}
-
-.wall {
-    height: 400px;
-    grid-area: wall;
-    background-color: yellow;
 }

@@ -1,6 +1,6 @@
-import React from 'react';
-import NavTopLinks from './NavTopLinks/NavTopLinks';
-import NavTopAccount from './NavTopAccount/NavTopAccount';
+import * as React from 'react';
+import { NavTopLinks } from './NavTopLinks/NavTopLinks';
+import { NavTopAccount } from './NavTopAccount/NavTopAccount';
 import './NavTop.scss';
 
 function NavTop() {
@@ -9,7 +9,7 @@ function NavTop() {
             <NavTopLinks />
             <NavTopAccount />
         </nav>
-    )
+    );
 };
 
-export default NavTop;
+export { NavTop }

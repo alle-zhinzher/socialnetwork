@@ -1,0 +1,10 @@
+.page--main {
+    display: grid;
+    grid-template-areas:
+    "profile wall aside";
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 6fr 2fr;
+    gap: 30px;
+    padding-top: 30px;
+    background-color: #f8f8f8;
+}

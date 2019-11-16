@@ -1,0 +1,17 @@
+.profile {
+    padding-left: 70px;
+    grid-area: profile;
+
+    &__avatar {
+        width: 230px;
+        height: 240px;
+        border-radius: 5px;
+    };
+
+    &__username {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 85px;
+    }
+
+}
