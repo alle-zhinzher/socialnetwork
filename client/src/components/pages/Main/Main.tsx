@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Aside } from '../../layout/Aside/Aside';
 import { Profile } from '../../layout/Profile/Profile';
 import { Wall } from '../../layout/Wall/Wall';
-import './MainPage.scss'
+import './Main.scss'
 
-class MainPage extends React.Component {
+class Main extends React.Component {
     render() {
         return (
             <section className="page page--main">
@@ -16,4 +16,4 @@ class MainPage extends React.Component {
     }
 };
 
-export { MainPage };
+export { Main };
